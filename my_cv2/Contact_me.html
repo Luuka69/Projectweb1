@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="csscontact.css">
+	<script src="script.js" defer></script>
     <title>Contact Me - Melek</title>
     
 </head>
@@ -13,18 +14,23 @@
 
     <p>Feel free to reach out to me using the form below or through my social media profiles. I look forward to connecting with you!</p>
 
-    <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">
-        <label for="name">Name:</label>
-        <input type="text"  name="name" required>
+    <form>
+         <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <span class="error-message" id="nameError"></span>
         <br>
 
         <label for="email">Email:</label>
-        <input type="email"  name="email" required>
+        <input type="email" name="email" id="email" required>
+        <span class="error-message" id="emailError"></span>
         <br>
+
         <label for="message">Message:</label>
-        <input type="text"  name="message" required>
+        <textarea name="message" id="message" required></textarea>
+        <span class="error-message" id="messageError"></span>
         <br>
-        <button type="submit">Send Message</button>
+
+         <button type="button" onclick="sendMessage()">Send Message</button>
     </form>
 
     <h2>Social Media</h2>
@@ -33,7 +39,7 @@
     <table>
         <tr>
             <td>
-                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv\facebook.jpg" height="40" width="40" alt="Melek Hadriche" >
+                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv2\facebook.jpg" height="40" width="40" alt="Melek Hadriche" >
             </td>
             <td>
                 <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Facebook</a>
@@ -41,7 +47,7 @@
         </tr>
         <tr>
             <td>
-                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv\insta.jpg" height="40" width="40" alt="Melek Hadriche" >
+                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv2\insta.jpg" height="40" width="40" alt="Melek Hadriche" >
             </td>
             <td>
                 <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Instagrame</a>
@@ -49,7 +55,7 @@
         </tr>
         <tr>
             <td>
-                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv\linkdin.jpg" height="30" width="30" alt="Melek Hadriche" >
+                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv2\linkdin.jpg" height="30" width="30" alt="Melek Hadriche" >
             </td>
             <td>
                 <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
@@ -57,7 +63,7 @@
         </tr>
         <tr>
             <td>
-                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv\github.jpg" height="40" width="40" alt="Melek Hadriche" >
+                <img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv2\github.jpg" height="40" width="40" alt="Melek Hadriche" >
             </td>
             <td>
                 <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Github</a>
@@ -68,7 +74,7 @@
         <hr>
         <table width="165%">
             <tr>
-                <td><img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv\signature.png" height="50" width="100" alt="Melek_Hadriche" ></td>
+                <td><img src="C:\Users\malek\OneDrive\Bureau\HTML\my_cv2\signature.png" height="50" width="100" alt="Melek_Hadriche" ></td>
                 <td><a href="homepage.html">Home Page</a></td>
             </tr>
         </table>
